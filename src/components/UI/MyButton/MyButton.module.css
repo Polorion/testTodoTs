@@ -1,0 +1,11 @@
+.button {
+  background-color: transparent;
+  color: #211717;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.button:disabled {
+  opacity: 0.3;
+}

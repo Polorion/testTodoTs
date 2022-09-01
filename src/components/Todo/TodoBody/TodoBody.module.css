@@ -1,0 +1,16 @@
+.body {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.body form {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.body form input {
+  flex: 1 1 auto;
+  padding: 10px;
+  margin-right: 10px;
+}
