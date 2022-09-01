@@ -17,7 +17,7 @@ interface IEditTodo {
 const EditTodo = (props: IEditTodo) => {
   const node = document.querySelector("#editTodo"); //нащел куда будет ссылаться портал
   const exit = useGoToHome(); //нук который вернет URL домашний адрес
-  const handler = (e: React.ChangeEvent<HTMLDivElement>) => {
+  const handler = (e: React.MouseEvent<HTMLDivElement>) => {
     e.stopPropagation(); // чтобы погружение события остановилось и модалка зкрылась
   };
   const onSubmit = (e: React.ChangeEvent<HTMLFormElement>) => {
@@ -35,7 +35,6 @@ const EditTodo = (props: IEditTodo) => {
 
   return ReactDOM.createPortal(
     <div className={S.body} onClick={exit}>
-      {/*@ts-ignore*/}
       <div onClick={handler}>
         <form onSubmit={onSubmit}>
           <input
