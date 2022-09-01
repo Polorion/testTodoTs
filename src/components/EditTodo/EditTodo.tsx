@@ -32,8 +32,10 @@ const EditTodo = (props: IEditTodo) => {
   if (!node) {
     return null;
   } // проверяю существует ли элемент куда я хочу напрравить портал
+
   return ReactDOM.createPortal(
     <div className={S.body} onClick={exit}>
+      {/*@ts-ignore*/}
       <div onClick={handler}>
         <form onSubmit={onSubmit}>
           <input
